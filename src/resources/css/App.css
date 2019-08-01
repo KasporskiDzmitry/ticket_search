@@ -1,0 +1,245 @@
+body {
+    background: aliceblue;
+}
+
+p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+label {
+    display: block;
+    line-height: 20px;
+}
+
+.filter-container {
+    margin-left: 50px;
+    margin-top: 10px;
+    height: 350px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.cur-switcher-wrapper {
+    height: 80px;
+    width: 265px;
+    position: relative;
+    left: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid aliceblue;
+}
+
+.currency-switcher {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    left: 40px;
+    height: 40px;
+}
+
+.btn-primary {
+    width: 60px;
+    height: 40px;
+    background: deepskyblue;
+    border: 1px;
+    border-radius: 5px;
+    margin: 1px;
+}
+
+.press-button {
+    background: darkcyan;
+}
+
+.btn-primary:hover {
+    background: darkcyan;
+}
+
+.stops-wrapper {
+    width: 265px;
+    position: relative;
+    left: 55px;
+}
+
+@keyframes click-wave {
+    0% {
+        height: 20px;
+        width: 20px;
+        opacity: 0.35;
+        position: relative;
+        border-radius: 6px;
+    }
+    100% {
+        height: 100px;
+        width: 100px;
+        margin-left: -40px;
+        margin-top: -40px;
+        opacity: 0;
+        border-radius: 6px;
+    }
+}
+
+.option-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 4px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    transition: all 0.15s ease-out 0s;
+    background: deepskyblue;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+}
+.option-input:hover {
+    background: darkcyan;
+}
+.option-input:checked {
+    background: darkcyan;
+}
+.option-input:checked::before {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    content: '✔';
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.option-input:checked::after {
+    -webkit-animation: click-wave 0.65s;
+    -moz-animation: click-wave 0.65s;
+    animation: click-wave 0.65s;
+    background: darkcyan;
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
+input[type=submit] {
+    display: block;
+    background: mediumspringgreen;
+    border: 1px;
+    border-radius: 6px;
+    position: relative;
+    height: 40px;
+    width: 187px;
+    margin-bottom: 5px;
+    color: darkolivegreen;
+    font-size: 18px;
+    outline: none;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active {
+    background: mediumseagreen;
+    color: white;
+}
+
+.reject {
+    font-size: 14px;
+    position: relative;
+    left: 65px;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: darkcyan;
+    border-bottom: 2px dotted aquamarine;
+}
+
+.reject:hover {
+    color: darkolivegreen;
+    cursor: pointer;
+}
+
+.ticket-container {
+    margin: 10px;
+    width: 550px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.tickets-not-found {
+    margin: 30px 0px 10px 0px;
+    position: relative;
+    left: 200px;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: orangered;
+}
+
+#buySection {
+    display: inline-block;
+    padding: 27px;
+    border-right: aliceblue 2px solid;
+}
+
+#logo {
+    position: relative;
+    bottom: 15px;
+    width: 150px;
+}
+
+.buy-button {
+    display: block;
+    background: orangered;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px;
+    font-size: 15px;
+}
+
+.buy-button:hover,
+.buy-button:focus,
+.buy-button:active {
+    cursor: pointer;
+    outline: none;
+    background: tomato;
+}
+
+#depTime, #arrTime {
+    font-size: 30px;
+}
+
+#arrTime {
+    margin-left: 31px;
+}
+
+#stops {
+    text-align: center;
+    font-size: 10px;
+    height: 20px;
+    text-transform: uppercase;
+    color: deepskyblue;
+    border-bottom: deepskyblue 1px solid;
+    position: relative;
+    top: 15px;
+}
+
+#stops:after {
+    background-image: url("../img/plane.png");
+    background-size: cover;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: "";
+    position: relative;
+    bottom: 6px;
+    left: 55px;
+}
